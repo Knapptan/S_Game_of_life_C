@@ -14,8 +14,6 @@ Provide for original initialization of the "game" state via stdin. Prepare at le
   
 * Your source code will be tested by the static analyzer `cppcheck`, as well as the style linter `cpplint`. 
   
-* Instructions on how to run these tests on your computer are in the `materials` folder. 
-  
 * Do not use cumbersome functions, limit them up to 40 lines (excluding `main`).
 
 * Check your program for memory leaks!
