@@ -69,7 +69,9 @@ int main() {
     endwin();
     clear_leaks(a);
     clear_leaks(b);
-    printf("Game over!\nThanks for playing!\n");
+    printf("\033[1;32m");
+    erase_field();
+    printf("Game over!\nThanks for playing!\n\n\n\n");
     return 0;
 }
 
@@ -184,8 +186,9 @@ void display_intro() {
 
 int choose_starter(int *starter, int *flag) {
     printf(
-        "Choose starter position and press Enter:\n\n1. Glider\n2. Glider gun\n3. Methuselah\n4. "
-        "Supernova\n5. Spaceship\n6. "
+        "Press + and - to control speed\nPress q to quit the game\nChoose "
+        "starter position and press Enter:\n\n1. Glider\n2. Glider "
+        "gun\n3. Methuselah\n4. Supernova\n5. Spaceship\n6. "
         "School 21\n");
     printf("\033[1;37m");
     if (!scanf("%d", starter)) *flag = 0;
